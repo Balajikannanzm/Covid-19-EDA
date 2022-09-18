@@ -1,5 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # Covid 19 EDA
 
 An covid 19 exploratory data analysis project using SQL from data observed between 01-01-2022 and 14-09-2022. 

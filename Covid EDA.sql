@@ -70,13 +70,13 @@ ORDER BY VaccinationStartdate;
 WITH cte_vaccinations (location, population,total_vaccinations, people_vaccinated, people_fully_vaccinated)
 AS
 (
-	SELECT location,
-    MAX(population),
-	MAX(total_vaccinations),
-	MAX(people_vaccinated),
-	MAX(people_fully_vaccinated)
-	FROM covid_data
-	GROUP BY location
+ SELECT location,
+ MAX(population),
+ MAX(total_vaccinations),
+ MAX(people_vaccinated),
+ MAX(people_fully_vaccinated)
+ FROM covid_data
+ GROUP BY location
 )
 SELECT * 
 FROM cte_vaccinations;
